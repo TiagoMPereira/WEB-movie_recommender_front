@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: rgb(29, 28, 28);
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.P-title {
+  color: rgb(198, 0, 0);
+  font-size: 72px;
+  font-weight: bold;
+  font-family: "Times New Roman";
+}
+
+.App-body {
+  background-color: rgb(29, 28, 28);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Form {
+  background-color: rgb(29, 28, 28);
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* set column sizes here */
+  grid-template-rows: auto auto; /* we want two rows */
+
+  grid-gap: 10px; /* how far between cells? */
+  grid-auto-flow: column; /* fill in by column, not row */
+
+}
+
+section div {
+  background-color: rgba(20, 19, 19, 63);
+  height: 250px;
+  width: 600px;
+}
+
+.P-form-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Arial";
+}
+
+.P-form-description {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Arial";
+}

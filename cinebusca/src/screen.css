@@ -1,0 +1,116 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: rgb(29, 28, 28);
+    min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .P-title {
+    color: rgb(198, 0, 0);
+    font-size: 72px;
+    font-weight: bold;
+    font-family: "Times New Roman";
+  }
+  
+  .App-body {
+    background-color: rgb(29, 28, 28);
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .Form {
+    background-color: rgb(29, 28, 28);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 10px;
+    grid-auto-flow: row;
+    width: 90%;
+  }
+  
+  
+  section div {
+    background-color: rgba(20, 19, 19, 63);
+    height: 250px;
+    width: 100%;
+    border: 1px solid white;
+  }
+  
+  .P-form-title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Arial";
+    text-align: left;
+    margin-left: 2%;
+  }
+  
+  .P-form-description {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Arial";
+    text-align: left;
+    margin-left: 2%;
+    transform: translateY(+70%);
+  }
+  
+  .P-form-infos {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Arial";
+    text-align: left;
+    margin-left: 2%;
+    transform: translateY(+380%);
+  }
+  
+  .submit {
+    background-color: red;
+    font-size: 18px;
+    color: white;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    position: absolute;
+    top: 14%;
+    right: 7%;
+    transform: translateY(-50%);
+  }
+  

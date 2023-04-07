@@ -221,3 +221,38 @@ div.checkbox {
 .checkbox-round-runtime:checked {
   background-color: rgb(255, 0, 0);
 }
+
+.custom-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 5px solid white;
+}
+
+.title {
+  font-size: 24px;
+  color: red;
+}
+
+.message {
+  font-size: 18px;
+  color: red;
+}
+
+.close-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+

@@ -10,7 +10,7 @@ const movie = {
     language: "English",
     popularity: "Very high"
   }
-  
+
   function screen() {
     return (
       <div className="App">
@@ -46,6 +46,7 @@ const movie = {
       </div>
     );
   }
+
   
 
 

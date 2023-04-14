@@ -100,7 +100,14 @@ section div {
 }
 
 select {
-  font-size: 50px;
+  font-size: 14px;
+  width: 90%;
+  height: 15%;
+}
+#select4 {
+  font-size: 14px;
+  width: 30%;
+  height: 15%;
 }
 
 .custom-slider::-webkit-slider-thumb {
@@ -125,17 +132,10 @@ select {
 
 h4.canto {
   float: right;
-  line-height: 26px;
-  margin: 20px;
+  margin: 5%;
   font-size: 18px;
 }
 
-div.tamanho {
-  height: 35px;
-  margin: 10px;
-  font-size: 18px;
-  align-items: end;
-}
 
 div.checkbox .checkbox-round-year {
   float: right;
@@ -159,18 +159,20 @@ div.checkbox .check {
 
 div.button_send {
   display:inline-block;
-  height: 220px;
-  width: 1200px;
+  height: 25%;
+  width: 100%;
   vertical-align: bottom;
-  margin: auto;
-  padding: 60px;
+  margin-top: 10%;
+  padding-bottom: 8%;
+
 }
 
 button.submit {
-  height: 80px;
-  width: 200px;
+  height: 50%;
+  width: 20%;
   background-color: #da1a1a;
-  font-size: 30px;
+  color:rgb(255, 255, 255);
+  font-size: 18px;
 }
 
 div.checkbox {
@@ -255,4 +257,3 @@ div.checkbox {
   cursor: pointer;
   margin-top: 20px;
 }
-

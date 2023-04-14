@@ -24,9 +24,11 @@
     color: white;
   }
 
+
   .App-link {
     color: #61dafb;
   }
+
 
   @keyframes App-logo-spin {
     from {
@@ -64,7 +66,6 @@
     grid-auto-flow: row;
     width: 90%;
   }
-
 
   section div {
     background-color: rgba(20, 19, 19, 63);
@@ -113,3 +114,4 @@
     right: 7%;
     transform: translateY(-50%);
   }
+

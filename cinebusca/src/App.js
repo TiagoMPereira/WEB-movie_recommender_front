@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import screen from './screen.js';
+//import screen from './screen.js';
 
 
 
@@ -76,12 +76,25 @@ function App() {
               </div>
               <div style={styles.selectWrapper}>
                 <select id="select3">
-                  <option value="option1">-</option>
-                  <option value="option2">Action</option>
-                  <option value="option3">Family</option>
-                  <option value="option3">Adventure</option>
-                  <option value="option3">Horror</option>
-
+                  <option value="option1">Action</option>
+                  <option value="option2">Adventure</option>
+                  <option value="option3">Animation</option>
+                  <option value="option4">Comedy</option>
+                  <option value="option5">Crime</option>
+                  <option value="option6">Documentary</option>
+                  <option value="option7">Drama</option>
+                  <option value="option8">Family</option>
+                  <option value="option9">Fantasy</option>
+                  <option value="option10">Foreign</option>
+                  <option value="option11">History</option>
+                  <option value="option12">Horror</option>
+                  <option value="option13">Music</option>
+                  <option value="option14">Mystery</option>
+                  <option value="option15">Romance</option>
+                  <option value="option16">Science Fiction</option>
+                  <option value="option17">Thriller</option>
+                  <option value="option18">War</option>
+                  <option value="option19">Western</option>
                 </select>
               </div>
             </div>
@@ -136,9 +149,17 @@ function App() {
             <div style={styles.selectWrapper}>
                 <select id="select4">
                   <option value="option1">-</option>
-                  <option value="option2">English</option>
-                  <option value="option3">Portuguese</option>
-                  <option value="option3">Spanish</option>
+                  <option value="option2">Chinese</option>
+                  <option value="option3">English</option>
+                  <option value="option4">French</option>
+                  <option value="option5">German</option>
+                  <option value="option6">Hindi</option>
+                  <option value="option7">Italian</option>
+                  <option value="option8">Japanese</option>
+                  <option value="option9">Korean</option>
+                  <option value="option10">Portuguese</option>
+                  <option value="option11">Russian</option>
+                  <option value="option12">Spanish</option>
 
                 </select>
               </div>
@@ -181,7 +202,7 @@ function isFormValid() {
     changesCount++;
   }
 
-
+}
 ///////////////////////////////////////////////////
 
 function handleSubmit() {

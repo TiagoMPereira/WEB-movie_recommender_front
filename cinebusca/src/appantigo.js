@@ -1,4 +1,4 @@
-import './App.css';
+import './pages/Home/App.css';
 import React, { useState } from 'react';
 import screen from './screen.js';
 

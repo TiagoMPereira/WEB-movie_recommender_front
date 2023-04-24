@@ -50,32 +50,62 @@ function App() {
       <body className="App-body">
         <section className="Form">
           <div>
-            <p className="P-form-title">Gender</p>
-            <p className="P-form-description">You can select up to 3 genders</p>
+            <p className="P-form-title">Genre</p>
+            <p className="P-form-description">You can select up to 3 genres</p>
             <div style={styles.container}>
               <div style={styles.selectWrapper}>
                 <select id="select1">
-                  <option value="option1">-</option>
-
-                  <option value="option2">Action</option>
-                  <option value="option3">Family</option>
-                  <option value="option3">Adventure</option>
-                  <option value="option3">Horror</option>
+                  <option value="option0">-</option>
+                  <option value="option1">Action</option>
+                  <option value="option2">Adventure</option>
+                  <option value="option3">Animation</option>
+                  <option value="option4">Comedy</option>
+                  <option value="option5">Crime</option>
+                  <option value="option6">Documentary</option>
+                  <option value="option7">Drama</option>
+                  <option value="option8">Family</option>
+                  <option value="option9">Fantasy</option>
+                  <option value="option10">Foreign</option>
+                  <option value="option11">History</option>
+                  <option value="option12">Horror</option>
+                  <option value="option13">Music</option>
+                  <option value="option14">Mystery</option>
+                  <option value="option15">Romance</option>
+                  <option value="option16">Science Fiction</option>
+                  <option value="option17">Thriller</option>
+                  <option value="option18">War</option>
+                  <option value="option19">Western</option>
 
                 </select>
               </div>
               <div style={styles.selectWrapper}>
                 <select id="select2">
-                  <option value="option1">-</option>
-                  <option value="option2">Action</option>
-                  <option value="option3">Family</option>
-                  <option value="option3">Adventure</option>
-                  <option value="option3">Horror</option>
+                  <option value="option0">-</option>
+                  <option value="option1">Action</option>
+                  <option value="option2">Adventure</option>
+                  <option value="option3">Animation</option>
+                  <option value="option4">Comedy</option>
+                  <option value="option5">Crime</option>
+                  <option value="option6">Documentary</option>
+                  <option value="option7">Drama</option>
+                  <option value="option8">Family</option>
+                  <option value="option9">Fantasy</option>
+                  <option value="option10">Foreign</option>
+                  <option value="option11">History</option>
+                  <option value="option12">Horror</option>
+                  <option value="option13">Music</option>
+                  <option value="option14">Mystery</option>
+                  <option value="option15">Romance</option>
+                  <option value="option16">Science Fiction</option>
+                  <option value="option17">Thriller</option>
+                  <option value="option18">War</option>
+                  <option value="option19">Western</option>
 
                 </select>
               </div>
               <div style={styles.selectWrapper}>
                 <select id="select3">
+                  <option value="option0">-</option>
                   <option value="option1">Action</option>
                   <option value="option2">Adventure</option>
                   <option value="option3">Animation</option>
@@ -148,19 +178,18 @@ function App() {
             <p className="P-form-description">Select the main language of the movie you expect</p>
             <div style={styles.selectWrapper}>
                 <select id="select4">
-                  <option value="option1">-</option>
-                  <option value="option2">Chinese</option>
-                  <option value="option3">English</option>
-                  <option value="option4">French</option>
-                  <option value="option5">German</option>
-                  <option value="option6">Hindi</option>
-                  <option value="option7">Italian</option>
-                  <option value="option8">Japanese</option>
-                  <option value="option9">Korean</option>
-                  <option value="option10">Portuguese</option>
-                  <option value="option11">Russian</option>
-                  <option value="option12">Spanish</option>
-
+                  <option value="option0">-</option>
+                  <option value="option1">Chinese</option>
+                  <option value="option2">English</option>
+                  <option value="option3">French</option>
+                  <option value="option4">German</option>
+                  <option value="option5">Hindi</option>
+                  <option value="option6">Italian</option>
+                  <option value="option7">Japanese</option>
+                  <option value="option8">Korean</option>
+                  <option value="option9">Portuguese</option>
+                  <option value="option10">Russian</option>
+                  <option value="option11">Spanish</option>
                 </select>
               </div>
           </div>

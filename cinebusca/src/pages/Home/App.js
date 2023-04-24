@@ -46,82 +46,82 @@ function App() {
       </header>
       <body className="App-body">
         <section className="Form">
-          <div>
+        <div>
             <p className="P-form-title">Genre</p>
             <p className="P-form-description">You can select up to 3 genres</p>
             <div style={styles.container}>
               <div style={styles.selectWrapper}>
-                <select id="select1">
-                  <option value="option0">-</option>
-                  <option value="option1">Action</option>
-                  <option value="option2">Adventure</option>
-                  <option value="option3">Animation</option>
-                  <option value="option4">Comedy</option>
-                  <option value="option5">Crime</option>
-                  <option value="option6">Documentary</option>
-                  <option value="option7">Drama</option>
-                  <option value="option8">Family</option>
-                  <option value="option9">Fantasy</option>
-                  <option value="option10">Foreign</option>
-                  <option value="option11">History</option>
-                  <option value="option12">Horror</option>
-                  <option value="option13">Music</option>
-                  <option value="option14">Mystery</option>
-                  <option value="option15">Romance</option>
-                  <option value="option16">Science Fiction</option>
-                  <option value="option17">Thriller</option>
-                  <option value="option18">War</option>
-                  <option value="option19">Western</option>
+                <select id="genre1">
+                  <option value="null">-</option>
+                  <option value="action">Action</option>
+                  <option value="adventure">Adventure</option>
+                  <option value="animation">Animation</option>
+                  <option value="comedy">Comedy</option>
+                  <option value="crime">Crime</option>
+                  <option value="documentary">Documentary</option>
+                  <option value="drama">Drama</option>
+                  <option value="family">Family</option>
+                  <option value="fantasy">Fantasy</option>
+                  <option value="foreign">Foreign</option>
+                  <option value="history">History</option>
+                  <option value="horror">Horror</option>
+                  <option value="music">Music</option>
+                  <option value="mystery">Mystery</option>
+                  <option value="romance">Romance</option>
+                  <option value="science fiction">Science Fiction</option>
+                  <option value="thriller">Thriller</option>
+                  <option value="war">War</option>
+                  <option value="western">Western</option>
 
                 </select>
               </div>
               <div style={styles.selectWrapper}>
-                <select id="select2">
-                  <option value="option0">-</option>
-                  <option value="option1">Action</option>
-                  <option value="option2">Adventure</option>
-                  <option value="option3">Animation</option>
-                  <option value="option4">Comedy</option>
-                  <option value="option5">Crime</option>
-                  <option value="option6">Documentary</option>
-                  <option value="option7">Drama</option>
-                  <option value="option8">Family</option>
-                  <option value="option9">Fantasy</option>
-                  <option value="option10">Foreign</option>
-                  <option value="option11">History</option>
-                  <option value="option12">Horror</option>
-                  <option value="option13">Music</option>
-                  <option value="option14">Mystery</option>
-                  <option value="option15">Romance</option>
-                  <option value="option16">Science Fiction</option>
-                  <option value="option17">Thriller</option>
-                  <option value="option18">War</option>
-                  <option value="option19">Western</option>
+                <select id="genre2">
+                  <option value="null">-</option>
+                  <option value="action">Action</option>
+                  <option value="adventure">Adventure</option>
+                  <option value="animation">Animation</option>
+                  <option value="comedy">Comedy</option>
+                  <option value="crime">Crime</option>
+                  <option value="documentary">Documentary</option>
+                  <option value="drama">Drama</option>
+                  <option value="family">Family</option>
+                  <option value="fantasy">Fantasy</option>
+                  <option value="foreign">Foreign</option>
+                  <option value="history">History</option>
+                  <option value="horror">Horror</option>
+                  <option value="music">Music</option>
+                  <option value="mystery">Mystery</option>
+                  <option value="romance">Romance</option>
+                  <option value="science fiction">Science Fiction</option>
+                  <option value="thriller">Thriller</option>
+                  <option value="war">War</option>
+                  <option value="western">Western</option>
 
                 </select>
               </div>
               <div style={styles.selectWrapper}>
-                <select id="select3">
-                  <option value="option0">-</option>
-                  <option value="option1">Action</option>
-                  <option value="option2">Adventure</option>
-                  <option value="option3">Animation</option>
-                  <option value="option4">Comedy</option>
-                  <option value="option5">Crime</option>
-                  <option value="option6">Documentary</option>
-                  <option value="option7">Drama</option>
-                  <option value="option8">Family</option>
-                  <option value="option9">Fantasy</option>
-                  <option value="option10">Foreign</option>
-                  <option value="option11">History</option>
-                  <option value="option12">Horror</option>
-                  <option value="option13">Music</option>
-                  <option value="option14">Mystery</option>
-                  <option value="option15">Romance</option>
-                  <option value="option16">Science Fiction</option>
-                  <option value="option17">Thriller</option>
-                  <option value="option18">War</option>
-                  <option value="option19">Western</option>
+                <select id="genre3">
+                  <option value="null">-</option>
+                  <option value="action">Action</option>
+                  <option value="adventure">Adventure</option>
+                  <option value="animation">Animation</option>
+                  <option value="comedy">Comedy</option>
+                  <option value="crime">Crime</option>
+                  <option value="documentary">Documentary</option>
+                  <option value="drama">Drama</option>
+                  <option value="family">Family</option>
+                  <option value="fantasy">Fantasy</option>
+                  <option value="foreign">Foreign</option>
+                  <option value="history">History</option>
+                  <option value="horror">Horror</option>
+                  <option value="music">Music</option>
+                  <option value="mystery">Mystery</option>
+                  <option value="romance">Romance</option>
+                  <option value="science fiction">Science Fiction</option>
+                  <option value="thriller">Thriller</option>
+                  <option value="war">War</option>
+                  <option value="western">Western</option>
                 </select>
               </div>
             </div>
@@ -138,6 +138,7 @@ function App() {
                 step={1}
                 value={width}
                 className='custom-slider'
+                id='release_year'
               ></input>
               <h4 class = "canto">YEAR: {width}</h4>
               <div class = "checkbox">
@@ -160,6 +161,7 @@ function App() {
                 step={1}
                 value={height}
                 className='custom-slider'
+                id='runtime'
               ></input>
               <h4 class = "canto">MIN: {height}</h4>
               <div class = "checkbox">
@@ -174,26 +176,27 @@ function App() {
             <p className="P-form-title">Language</p>
             <p className="P-form-description">Select the main language of the movie you expect</p>
             <div style={styles.selectWrapper}>
-                <select id="select4">
-                  <option value="option0">-</option>
-                  <option value="option1">Chinese</option>
-                  <option value="option2">English</option>
-                  <option value="option3">French</option>
-                  <option value="option4">German</option>
-                  <option value="option5">Hindi</option>
-                  <option value="option6">Italian</option>
-                  <option value="option7">Japanese</option>
-                  <option value="option8">Korean</option>
-                  <option value="option9">Portuguese</option>
-                  <option value="option10">Russian</option>
-                  <option value="option11">Spanish</option>
+            <select id="language">
+                  <option value="null">-</option>
+                  <option value="chinese">Chinese</option>
+                  <option value="english">English</option>
+                  <option value="french">French</option>
+                  <option value="german">German</option>
+                  <option value="hindi">Hindi</option>
+                  <option value="italian">Italian</option>
+                  <option value="japanese">Japanese</option>
+                  <option value="korean">Korean</option>
+                  <option value="portuguese">Portuguese</option>
+                  <option value="russian">Russian</option>
+                  <option value="spanish">Spanish</option>
                 </select>
               </div>
           </div>
         </section>
         <div class = "button_send">
           <h1></h1>
-          <button class="submit" type="button" onClick={handleSubmit}>RECOMMEND</button>
+          <button class="submit" type="button" onClick={enviarRequisicao}>RECOMMEND</button>
+          <div id="resultado"></div>
         </div>
       </body>
     </div>
@@ -283,6 +286,36 @@ function alertNew() {
 
   // Adicione o elemento de alerta personalizado à página
   document.body.appendChild(alertaPersonalizado);
+}
+
+
+function enviarRequisicao() {
+  const genre1 = document.getElementById('genre1').value;
+  const genre2 = document.getElementById('genre2').value;
+  const genre3 = document.getElementById('genre3').value;
+  const language = document.getElementById('language').value;
+  const runtime = document.getElementById('runtime').value;
+  const release_year = document.getElementById('release_year').value;
+
+  fetch('http://0.0.0.0:8000/recommend', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      genres: [genre1, genre2, genre3],
+      language: language,
+      runtime: runtime,
+      release_year: release_year
+    })
+  })
+  .then(response => response.json())
+  .then(data =>{
+    const resultadoElement = document.getElementById('resultado');
+    resultadoElement.innerHTML = data && data.status;
+  })
+  .catch(error => console.error(error))
+
 }
 
 

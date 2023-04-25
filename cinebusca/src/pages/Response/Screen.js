@@ -11,7 +11,7 @@ const movie = {
     popularity: "Very high"
   }
 
-  function screen() {
+  function Screen() {
     return (
       <div className="App">
         <header className="App-header">
@@ -48,4 +48,4 @@ const movie = {
   }
 
 
-export default screen;
+export default Screen;

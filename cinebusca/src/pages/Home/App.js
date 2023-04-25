@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
+import Screen from '../Response/Screen'
 
 //////////////////////////////////////////////////////////////
 
@@ -215,19 +216,19 @@ function isFormValid() {
 
   let changesCount = 0;
 
-  if (Array.from(genderSelects).some((select) => select.value !== 'option1')) {
+  if (Array.from(genderSelects).some((select) => select.value !== 'null')) {
     changesCount++;
   }
 
-  if (releaseYearInput.value !== '1900' || releaseYearCheckbox.checked) {
+  if (releaseYearInput.value !== '1900' || !releaseYearCheckbox.checked) {
     changesCount++;
   }
 
-  if (runtimeInput.value !== '0' || runtimeCheckbox.checked) {
+  if (runtimeInput.value !== '0' || !runtimeCheckbox.checked) {
     changesCount++;
   }
 
-  if (languageSelect.value !== 'option1') {
+  if (languageSelect.value !== 'null') {
     changesCount++;
   }
 

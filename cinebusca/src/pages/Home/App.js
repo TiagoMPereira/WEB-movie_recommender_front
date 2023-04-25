@@ -1,7 +1,5 @@
 import './App.css';
 import React, { useState } from 'react';
-import Screen from '../Response/Screen'
-import { useHistory } from 'react-router-dom';
 
 //////////////////////////////////////////////////////////////
 
@@ -312,9 +310,9 @@ function enviarRequisicao() {
     })
   })
   .then(response => response.json())
-  .then(data =>{
-    const resultadoElement = document.getElementById('resultado');
-    resultadoElement.innerHTML = data && data.status;
+  .then(data => {
+    localStorage.setItem('dados', JSON.stringify(data && data.movies.movie0));
+    window.location.href = '/recommendation';
   })
   .catch(error => console.error(error))
 

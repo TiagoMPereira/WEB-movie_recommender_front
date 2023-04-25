@@ -1,60 +1,69 @@
-import './App.css';
+import './Screen.css';
 import React, { useState, useEffect } from 'react';
 
 
-const movie = {
-    release: 2002,
-    runtime: "133 min",
-    genres: "Adventure, Family, Fantasy",
-    voteAverage: 7.4,
-    language: "English",
-    popularity: "Very high"
-  }
 
-  function Screen() {
-    const [dados, setDados] = useState({});
 
-    useEffect(() => {
-      // Recupera os dados do localStorage
-      const dadosSalvos = localStorage.getItem('dados');
-      if (dadosSalvos) {
-        setDados(JSON.parse(dadosSalvos));
-      }
-    }, []);
+function Screen() {
+  const [dados0, setDados0] = useState({});
+  const [dados1, setDados1] = useState({});
+  const [dados2, setDados2] = useState({});
 
-    return (
-      <div className="App">
-        <header className="App-header">
-          <div class="Title">
-            <p class="P-title">
-              CINEBUSCA
-            </p>
+  useEffect(() => {
+    // Recupera os dados do primeiro filme do localStorage
+    const dadosSalvos0 = localStorage.getItem('dados0');
+    if (dadosSalvos0) {
+      setDados0(JSON.parse(dadosSalvos0));
+    }
+    // Recupera os dados do segundo filme do localStorage
+    const dadosSalvos1 = localStorage.getItem('dados1');
+    if (dadosSalvos1) {
+      setDados1(JSON.parse(dadosSalvos1));
+    }
+    // Recupera os dados do terceiro filme do localStorage
+    const dadosSalvos2 = localStorage.getItem('dados2');
+    if (dadosSalvos2) {
+      setDados2(JSON.parse(dadosSalvos2));
+    }
+  }, []);
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <div class="Title">
+          <p class="P-title">
+            CINEBUSCA
+          </p>
+        </div>
+        <div className='return_button'><button className="return" type="button" onClick={retornar}>RETURN</button></div>
+      </header>
+      <body className="Movies-body">
+        
+        <section className="Form-movies">
+        <div className="movies">
+            <p className="P-form-title">{dados0.title}</p>
+            <p className="P-form-description">{dados0.overview}</p>
+            <p className="P-form-infos"> Release: {dados0.release_year}  |  Runtime: {dados0.runtime}  |  Genres: {dados0.genres}  |  Vote Average: {dados0.vote_average}  |  Language: {dados0.original_language}</p>
           </div>
-        </header>
-        <body className="App-body">
-            <button className="submit" type="button">RETURN</button>
-          <section className="Form">
-          <div>
-              <p className="P-form-title">{dados.title}</p>
-              <p className="P-form-description">{dados.overview}</p>
-              <p className="P-form-infos"> Release: {dados.release_year}  |  Runtime: {dados.runtime}  |  Genres: {dados.genres}  |  Vote Average: {dados.vote_average}  |  Language: {dados.original_language}</p>
-            </div>
-            <div>
-              <p className="P-form-title">Harry Potter and the Chamber of Secrets</p>
-              <p className="P-form-description">Ignoring threats to his life, Harry returns to Hogwarts to investigate - aided by Ron and Hermione - a mysterious series of attacks.</p>
-              <p className="P-form-infos"> Release: {movie.release}  |  Runtime: {movie.runtime}  |  Genres: {movie.genres}  |  Vote Average: {movie.voteAverage}  |  Language: {movie.language}  |  Popularity: {movie.popularity} </p>
-            </div>
-            <div>
-              <p className="P-form-title">Harry Potter and the Prisoner of Azkaban</p>
-              <p className="P-form-description">Harry, Ron and Hermione retur to Hogwarts for another magic-filled year. Harry comes face to face with danger yet again, this time in the form of escaped convict,
-  Sirius Black - and turns to sympathetic Professor Lupin for help.</p>
-              <p className="P-form-infos"> Release: {movie.release}  |  Runtime: {movie.runtime}  |  Genres: {movie.genres}  |  Vote Average: {movie.voteAverage}  |  Language: {movie.language}  |  Popularity: {movie.popularity} </p>
-            </div>
-          </section>
-        </body>
-      </div>
-    );
-  }
+          <div className="movies">
+          <p className="P-form-title">{dados1.title}</p>
+            <p className="P-form-description">{dados1.overview}</p>
+            <p className="P-form-infos"> Release: {dados1.release_year}  |  Runtime: {dados1.runtime}  |  Genres: {dados1.genres}  |  Vote Average: {dados1.vote_average}  |  Language: {dados1.original_language}</p>
+          </div>
+          <div className="movies">
+          <p className="P-form-title">{dados2.title}</p>
+            <p className="P-form-description">{dados2.overview}</p>
+            <p className="P-form-infos"> Release: {dados2.release_year}  |  Runtime: {dados2.runtime}  |  Genres: {dados2.genres}  |  Vote Average: {dados2.vote_average}  |  Language: {dados2.original_language}</p>
+          </div>
+        </section>
+      </body>
+    </div>
+  );
+}
+
+function retornar() {
+  window.location.href = '/';
+}
 
 
 export default Screen;

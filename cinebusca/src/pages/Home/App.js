@@ -311,7 +311,9 @@ function enviarRequisicao() {
   })
   .then(response => response.json())
   .then(data => {
-    localStorage.setItem('dados', JSON.stringify(data && data.movies.movie0));
+    localStorage.setItem('dados0', JSON.stringify(data && data.movies.movie0));
+    localStorage.setItem('dados1', JSON.stringify(data && data.movies.movie1));
+    localStorage.setItem('dados2', JSON.stringify(data && data.movies.movie2));
     window.location.href = '/recommendation';
   })
   .catch(error => console.error(error))

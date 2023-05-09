@@ -163,7 +163,7 @@ function App() {
                 className='custom-slider'
                 id='runtime'
               ></input>
-              <h4 class = "canto">MIN: {height}</h4>
+              <h4 class = "canto">MINUTES: {height}</h4>
               <div class = "checkbox">
                   <input type="checkbox" class="checkbox-round-runtime"/>
                 <span>
@@ -206,10 +206,10 @@ function App() {
 //////////////////////////////////////////////////////////////
 
 function isFormValid() {
-  const genderSelects = document.querySelectorAll('#select1, #select2, #select3');
-  const releaseYearInput = document.querySelector('input[type="range"]');
-  const runtimeInput = document.querySelector('input[type="range"]');
-  const languageSelect = document.querySelector('#select4');
+  const genderSelects = document.querySelectorAll('#genre1, #genre2, #genre3');
+  const releaseYearInput = document.querySelector('#release_year');
+  const runtimeInput = document.querySelector('#runtime');
+  const languageSelect = document.querySelector('#language');
   const releaseYearCheckbox = document.querySelector('.checkbox-round-year');
   const runtimeCheckbox = document.querySelector('.checkbox-round-runtime');
 
@@ -219,7 +219,7 @@ function isFormValid() {
     changesCount++;
   }
 
-  if (releaseYearInput.value !== '1900' || !releaseYearCheckbox.checked) {
+  if (!releaseYearCheckbox.checked) {
     changesCount++;
   }
 
@@ -231,13 +231,19 @@ function isFormValid() {
     changesCount++;
   }
 
+  if (changesCount < 3){
+    return false
+  } else {
+    return true
+  }
+
 }
 ///////////////////////////////////////////////////
 
 function handleSubmit() {
   if (!isFormValid()) {
     alertNew();
-    return;
+    return 0;
   }
 
 
@@ -290,33 +296,36 @@ function alertNew() {
 
 
 function enviarRequisicao() {
-  const genre1 = document.getElementById('genre1').value;
-  const genre2 = document.getElementById('genre2').value;
-  const genre3 = document.getElementById('genre3').value;
-  const language = document.getElementById('language').value;
-  const runtime = document.getElementById('runtime').value;
-  const release_year = document.getElementById('release_year').value;
+  let handle_return = handleSubmit()
+  if (handle_return != 0){
+    const genre1 = document.getElementById('genre1').value;
+    const genre2 = document.getElementById('genre2').value;
+    const genre3 = document.getElementById('genre3').value;
+    const language = document.getElementById('language').value;
+    const runtime = document.getElementById('runtime').value;
+    const release_year = document.getElementById('release_year').value;
 
-  fetch('http://0.0.0.0:8000/recommend', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      genres: [genre1, genre2, genre3],
-      language: language,
-      runtime: runtime,
-      release_year: release_year
+    fetch('http://0.0.0.0:8000/recommend', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        genres: [genre1, genre2, genre3],
+        language: language,
+        runtime: runtime,
+        release_year: release_year
+      })
     })
-  })
-  .then(response => response.json())
-  .then(data => {
-    localStorage.setItem('dados0', JSON.stringify(data && data.movies.movie0));
-    localStorage.setItem('dados1', JSON.stringify(data && data.movies.movie1));
-    localStorage.setItem('dados2', JSON.stringify(data && data.movies.movie2));
-    window.location.href = '/recommendation';
-  })
-  .catch(error => console.error(error))
+    .then(response => response.json())
+    .then(data => {
+      localStorage.setItem('dados0', JSON.stringify(data && data.movies.movie0));
+      localStorage.setItem('dados1', JSON.stringify(data && data.movies.movie1));
+      localStorage.setItem('dados2', JSON.stringify(data && data.movies.movie2));
+      window.location.href = '/recommendation';
+    })
+    .catch(error => console.error(error))
+  }
 
 }
 

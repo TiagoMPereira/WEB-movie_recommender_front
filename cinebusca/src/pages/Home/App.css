@@ -55,6 +55,14 @@
   color: white;
 }
 
+.Movies-body {
+  background-color: rgb(29, 28, 28);
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
 .Form {
   background-color: rgb(29, 28, 28);
   display: grid;
@@ -64,6 +72,16 @@
   grid-gap: 10px; /* how far between cells? */
   grid-auto-flow: column; /* fill in by column, not row */
   row-gap: 130px;
+}
+
+.Form-movies {
+  background-color: rgb(29, 28, 28);
+}
+
+.return_button{
+  margin-left: 75%;
+  margin-top: -9%;
+  height: 100%;
 }
 
 section div {
@@ -170,9 +188,30 @@ div.button_send {
 button.submit {
   height: 50%;
   width: 20%;
+  background-color: red;
+  color:rgb(255, 255, 255);
+  font-size: 18px;
+}
+
+button.return {
+  border-color: #da1a1a;
+  margin-bottom: 1%;
+  margin-top: 0%;
+  height: 100%;
+  width: 100%;
   background-color: #da1a1a;
   color:rgb(255, 255, 255);
   font-size: 18px;
+  font-family: "Times New Roman";
+  border-radius: 7%;
+}
+
+div.movies{
+  border: 1px solid white;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 1%;
+  padding: 1%;
 }
 
 div.checkbox {

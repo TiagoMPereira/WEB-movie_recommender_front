@@ -41,17 +41,17 @@ function Screen() {
         
         <section className="Form-movies">
         <div className="movies">
-            <p className="P-form-title">{dados0.title}</p>
+            <p className="P-form-title" id="movie0_infos">{dados0.title}</p>
             <p className="P-form-description">{dados0.overview}</p>
             <p className="P-form-infos"> Release: {dados0.release_year}  |  Runtime: {dados0.runtime}  |  Genres: {dados0.genres}  |  Vote Average: {dados0.vote_average}  |  Language: {dados0.original_language}</p>
           </div>
           <div className="movies">
-          <p className="P-form-title">{dados1.title}</p>
+          <p className="P-form-title" id="movie1_infos">{dados1.title}</p>
             <p className="P-form-description">{dados1.overview}</p>
             <p className="P-form-infos"> Release: {dados1.release_year}  |  Runtime: {dados1.runtime}  |  Genres: {dados1.genres}  |  Vote Average: {dados1.vote_average}  |  Language: {dados1.original_language}</p>
           </div>
           <div className="movies">
-          <p className="P-form-title">{dados2.title}</p>
+          <p className="P-form-title" id="movie2_infos">{dados2.title}</p>
             <p className="P-form-description">{dados2.overview}</p>
             <p className="P-form-infos"> Release: {dados2.release_year}  |  Runtime: {dados2.runtime}  |  Genres: {dados2.genres}  |  Vote Average: {dados2.vote_average}  |  Language: {dados2.original_language}</p>
           </div>

@@ -47,7 +47,7 @@ function App() {
       <body className="App-body">
         <section className="Form">
         <div>
-            <p className="P-form-title">Genre</p>
+            <p className="P-form-title" id="title_genre">Genre</p>
             <p className="P-form-description">You can select up to 3 genres</p>
             <div style={styles.container}>
               <div style={styles.selectWrapper}>
@@ -127,7 +127,7 @@ function App() {
             </div>
           </div>
           <div>
-            <p className="P-form-title">Release year</p>
+            <p className="P-form-title" id="title_release_year">Release year</p>
             <p className="P-form-description">Select the release year of the movie you expect</p>
             <div>
               <input
@@ -142,7 +142,7 @@ function App() {
               ></input>
               <h4 class = "canto">YEAR: {width}</h4>
               <div class = "checkbox">
-                  <input type="checkbox" class="checkbox-round-year"/>
+                  <input type="checkbox" class="checkbox-round-year" id="check_year"/>
                 <span>
                   <label class = "check" for="checkbox">ANY  </label>
                 </span>
@@ -150,7 +150,7 @@ function App() {
             </div>
           </div>
           <div>
-            <p className="P-form-title">Runtime</p>
+            <p className="P-form-title" id="title_runtime">Runtime</p>
             <p className="P-form-description">Select the runtime, in minutes, of the movie you expect</p>
             <div>
               <input
@@ -165,7 +165,7 @@ function App() {
               ></input>
               <h4 class = "canto">MINUTES: {height}</h4>
               <div class = "checkbox">
-                  <input type="checkbox" class="checkbox-round-runtime"/>
+                  <input type="checkbox" class="checkbox-round-runtime" id="check_runtime"/>
                 <span>
                   <label class = "check" for="checkbox">ANY  </label>
                 </span>
@@ -173,7 +173,7 @@ function App() {
             </div>
           </div>
           <div>
-            <p className="P-form-title">Language</p>
+            <p className="P-form-title" id="title_language">Language</p>
             <p className="P-form-description">Select the main language of the movie you expect</p>
             <div style={styles.selectWrapper}>
             <select id="language">
